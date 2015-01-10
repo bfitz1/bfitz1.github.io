@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Norwester';
+    src: url('fonts/norwester/norwester.eot');
+    src: url('fonts/norwester/norwester.eot?#iefix') format('embedded-opentype'),
+         url('fonts/norwester/norwester.woff') format('woff'),
+         url('fonts/norwester/norwester.ttf') format('truetype'),
+         url('fonts/norwester/norwester.svg#webfont') format('svg');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19191f;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+hr {
+    position: fixed;
+    background-color: #1aaecc;
+    width: 100%;
+    height: 3px;
+    top: 0;
+    border: 0;
+}
+
+#ready, #go {
+    width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+}
+
+#go {
+    opacity: 1;
+}
+
+#mailto {
+    margin: 50px 0 0 0;
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2.75px solid #1aaecc;
+    border-radius: 6.5px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #19191f;
+    color: #1aaecc;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+#mailto:hover {
+    background-color: #1aaecc;
+    color: #19191f;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav ul {
+    overflow: hidden;
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style-type: none;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 20px;
+    float: left;
+}
+
+nav ul a {
+    position: relative;
+    display: block;
+    color: #1aaecc;
+    text-decoration: none;
+    padding: 3px 0;
+    margin: 5px 0;
+}
+
+nav ul a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 8px;
+    background-color: #1aaecc;
+    content: "";
+    transition: width 0.2s ease;
+}
+
+
+nav ul a:hover:after {
+    width: 100%;
+}
+
+header {
+    clear: right;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Norwester', sans-serif;
+    padding: 100px 0 0 0;
+    color: #1aaecc;
+    font-size: 112px;
+}
+
+h2, h3 {
+    line-height: 125%;
+    color: #f0f0f0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 32px;
+}
